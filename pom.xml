@@ -88,6 +88,7 @@
 
     <build>
         <plugins>
+            <!-- 热部署插件相关-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
