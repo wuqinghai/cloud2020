@@ -21,7 +21,11 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderController
 {
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    // 接口地址被写死在代码中难以维护
+    // public static final String PAYMENT_URL = "http://localhost:8001";
+
+    // 通过服务名从注册中心获取ip信息
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;
